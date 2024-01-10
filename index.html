@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  <title>Marvel Index App</title>
+  <link href="https://fonts.googleapis.com/css?family=Bangers|Roboto|Roboto+Condensed&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" 
+  type="image/png" 
+  href="http://icons.iconarchive.com/icons/dominicanjoker/comic-publisher-folder/64/Marvel-icon.png">
+</head>
+
+<body>
+  <div class='container'>
+      <form id="search">
+          <header>Search Marvel Character</header>
+            <input class="searchBar" type="text" name="name" id="search-character" placeholder="i.e...Iron Man, Hulk, Spider-Man" required>
+            <input class="searchButton"type="submit" value="Search!">
+        </form>
+  </div>
+  <div class='containerStart'>
+    <div class="containerStartThings">
+    <label>Marvel Character Index</label>
+    <main>This is the marvel index<br>Find information on any character<br>in the Marvel Universe!</main>
+   </div>
+  </div>
+	<div class='container2' hidden="true">
+	
+      <div id='buyButton'></div>
+      <div id="searchResults"></div>
+      <div class="errorMessage"></div>
+      <div id="comicResults"></div>
+    <p id="js-error-message" class="error-message"></p>
+  </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="md5.js"></script>
+    <script src="index.js"></script>
+   
+</body>
+</html>
